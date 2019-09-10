@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">FirebasePrimeirosPassos</string>
+    <string name="btn">Salvar</string>
+    <string name="PlainText">Insira seu nome</string>
+    <string name="item_leitura">Leitura</string>
+</resources>

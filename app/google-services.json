@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "460638919766",
+    "firebase_url": "https://primeirospassos-12365.firebaseio.com",
+    "project_id": "primeirospassos-12365",
+    "storage_bucket": "primeirospassos-12365.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:460638919766:android:03dccd5c621ac2b9f26ff7",
+        "android_client_info": {
+          "package_name": "com.example.firebaseprimeirospassos"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "460638919766-ef31elu9dpeldb60u65pm1d3ln6ghh9r.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.firebaseprimeirospassos",
+            "certificate_hash": "9e6a443ae1d42fa00107ebd0aa258ad99625359a"
+          }
+        },
+        {
+          "client_id": "460638919766-p5irro0cusrnuv9dth1kf1hovcrfba2v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCByfC49zJ6am6KKiX0jazottrwcmwHMhU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "460638919766-p5irro0cusrnuv9dth1kf1hovcrfba2v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
