@@ -24,7 +24,9 @@ public class MainActivity extends AppCompatActivity {
 
     private FirebaseDatabase firebaseDatabase;
     private DatabaseReference databaseReference;
-    private EditText editTextNome;
+    private EditText editTextValor1;
+    private EditText editTextValor2;
+    private EditText editTextValor3;
 
 
     @Override
@@ -33,7 +35,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         conectarBanco();
 
-        editTextNome = findViewById(R.id.edit_text_nome);
+        editTextValor1 = findViewById(R.id.edit_text_valor1);
+        editTextValor2 = findViewById(R.id.edit_text_valor2);
+        editTextValor3 = findViewById(R.id.edit_text_valor3);
+
     }
 
 
@@ -43,7 +48,19 @@ public class MainActivity extends AppCompatActivity {
         databaseReference = firebaseDatabase.getReference();
     }
     public void salvarDado(View v){
-        databaseReference.child("Dicionario").child(UUID.randomUUID().toString()).child("Valor").setValue(editTextNome.getText().toString());
+
+
+
+
+        databaseReference.child("Dicionario").child("Valor1").child("Valor").setValue(editTextValor1.getText().toString());
+        databaseReference.child("Dicionario").child("Valor2").child("Valor").setValue(editTextValor2.getText().toString());
+        databaseReference.child("Dicionario").child("Valor3").child("Valor").setValue(editTextValor3.getText().toString());
+
+
+        editTextValor1.setText("");
+        editTextValor2.setText("");
+        editTextValor3.setText("");
+
 
     }
 

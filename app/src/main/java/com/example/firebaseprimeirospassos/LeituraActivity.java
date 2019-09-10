@@ -37,7 +37,24 @@ public class LeituraActivity extends AppCompatActivity {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
 
-                textViewLeitura.setText(dataSnapshot.child("123456").child("Valor").getValue().toString());
+               Double nota1 = Double.parseDouble(dataSnapshot.child("Valor1").child("Valor").getValue().toString().replace(",","."));
+               Double nota2 = Double.parseDouble(dataSnapshot.child("Valor2").child("Valor").getValue().toString().replace(",","."));
+               Double nota3 = Double.parseDouble(dataSnapshot.child("Valor3").child("Valor").getValue().toString().replace(",","."));
+
+
+
+                Double media = (nota1+nota2+nota3)/3;
+
+
+
+                String mediaString = String.format("%.2f",media.doubleValue());
+
+
+                textViewLeitura.setText( "A média foi  "  + mediaString.toString());
+
+
+
+
             }
 
             @Override
